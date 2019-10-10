@@ -75,7 +75,7 @@ function purchase(product, quantity) {
         "UPDATE product SET ? WHERE ?",
         [
           {
-            stock_quantity: stock_quantity - quantity
+            stock_quantity: results[0].stock_quantity - quantity
           },
           {
             id: product
@@ -90,3 +90,4 @@ function purchase(product, quantity) {
 }
 
 displayTable();
+ 
