@@ -65,13 +65,13 @@ function purchase(product, quantity) {
   connection.query("SELECT * FROM product WHERE ?", 
   [{ id: product }], function(err,results){
     if (err) throw err;
-    console.log(results);
-    console.log(results[0].stock_quantity);
+    // console.log(results);
+    // console.log(results[0].stock_quantity);
 
     if (results[0].stock_quantity >= quantity) {
-      console.log("You are in luck, we have the item!");
+      console.log(`You are in luck, we have the item! You owe: $${results[0].price * quantity} \n `);
       connection.query(
-        // "UPDATE products SET stock_quantity = stock_quantity - " + quantity + "WHERE item_id = " + product);
+        
         "UPDATE product SET ? WHERE ?",
         [
           {
@@ -85,9 +85,24 @@ function purchase(product, quantity) {
     } else {
       console.log(`Sorry, we only have ${results[0].stock_quantity} in stock`);
     }
-    displayTable();
+    inquirer.prompt([
+      {
+          type: "list",
+          name: "action",
+          message: "What would you like to do next\n",
+          choices: [ "Would you like to buy something else?", "Would you like to live our lovely store?" ],
+          filter: function( val ){return val.toLowerCase()}
+        }
+      ]).then (answers => {
+        if (answers.action === "would you like to buy something else?"){
+          console.log("Great!!! Make your Choice")
+          displayTable();
+                  
+        }else if (answers.action === "would you like to live our lovely store?"){
+              console.log("See you later")
+              connection.end();
+        }
+      })
   });
 }
-
-displayTable();
- 
+displayTable()
