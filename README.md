@@ -12,10 +12,11 @@ Transaction complete!
 
 <h3> Manager portal **STILL UNDER DEVELOPMENT** </h3>
 Within the manager portal, the following items will be available:
-* view all the inventory in the store 
-*view all low inventory (less than 5 items on hand)
-*add new Item to inventory 
-*Delete items from inventory listing
+
+* View all the inventory in the store 
+* View all low inventory (less than 5 items on hand)
+* Add new Item to inventory 
+* Delete items from inventory listing
 
 <h3>Technology used: </h3>
 
