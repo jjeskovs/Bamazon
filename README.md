@@ -39,9 +39,11 @@ Within the manager portal, the following items will be available:
 **The app calculates the total for the purchase, and asks what step the user would like to do next, buy additional items or leave the store.**
 
 Additional item:
+
 ![purchase](images/additional_purchase.png)
 
 Leave the store:
+
 ![exit](images/exit.png)
 
 **If the store cannot cover the order with the inventory on hand.**
