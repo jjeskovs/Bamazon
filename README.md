@@ -1,16 +1,31 @@
 ![logo](images/bamazon.png)
 
-<h1>Bamazon! </h1>
+# Bamazon! 
 
-<h2>About</h2>
+## About
 
-<h3>Customer portal</h3>
 Within the customer portal, on the first page load the user can the full inventory currently on hand at the store. Further, through command line the user can select the item they are interested. Then the user can select the quantity they would like to purchase.  
 
 Once the item and the quantity has been selected, the app will check the quantity requested against the quantity on hand. Next, the app will check if the items on hand can cover the order. The user then will be notified either if the transaction was successful. 
 Transaction complete!
 
-<h3> Manager portal **STILL UNDER DEVELOPMENT** </h3>
+## Getting Started
+1. Clone the repository 
+<pre>git clone git@github.com:jjeskovs/liri-node-app.git</pre>
+
+2. Install Node.js
+3. Install all the dependency by running the 
+<pre>npm install</pre>
+
+
+### Technology used:
+
+* MySQL
+* Node.JS
+* JavaScript
+
+## Future Development
+Manager portal **STILL UNDER DEVELOPMENT**
 Within the manager portal, the following items will be available:
 
 * View all the inventory in the store 
@@ -18,15 +33,7 @@ Within the manager portal, the following items will be available:
 * Add new Item to inventory 
 * Delete items from inventory listing
 
-<h3>Technology used: </h3>
-
-* MySQL
-* Node.JS
-* JavaScript
-
-
-
-<h3>Preview of the app:</h3>
+### Preview of the app:
 
 **Home Screen with the list of current items on hand.**
 
