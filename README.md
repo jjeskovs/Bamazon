@@ -11,29 +11,21 @@ Transaction complete!
 
 ## Getting Started
 1. Clone the repository 
-<pre>git clone git@github.com:jjeskovs/liri-node-app.git</pre>
+<pre>git clone git@github.com:jjeskovs/Bamazon.git</pre>
 
 2. Install Node.js
 3. Install all the dependency by running the 
 <pre>npm install</pre>
 
+4. Seed MySQL database 
 
-### Technology used:
 
-* MySQL
-* Node.JS
-* JavaScript
+## Running Bamazon from the CLI
 
-## Future Development
-Manager portal **STILL UNDER DEVELOPMENT**
-Within the manager portal, the following items will be available:
+<pre>
+node bamazonCustomer.js 
+</pre>
 
-* View all the inventory in the store 
-* View all low inventory (less than 5 items on hand)
-* Add new Item to inventory 
-* Delete items from inventory listing
-
-### Preview of the app:
 
 **Home Screen with the list of current items on hand.**
 
@@ -56,3 +48,19 @@ Leave the store:
 **If the store cannot cover the order with the inventory on hand.**
 
 ![not_so_much](images/not_so_much.png)
+
+### Technology used:
+
+* JavaScript
+* Node.JS
+* Inquirer.JS
+* MySQL
+
+## Future Development
+Manager portal **STILL UNDER DEVELOPMENT**
+Within the manager portal, the following items will be available:
+
+* View all the inventory in the store 
+* View all low inventory (less than 5 items on hand)
+* Add new Item to inventory 
+* Delete items from inventory listing
