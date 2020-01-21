@@ -51,7 +51,7 @@ function choices() {
       {
         name: "quantity",
         type: "input",
-        message: "How many items you want?"
+        message: "How many items you would like to purchase?"
       }
     ])
     .then(answers => {
@@ -71,9 +71,9 @@ function purchase(product, quantity) {
     // console.log(results[0].stock_quantity);
 
     if (results[0].stock_quantity >= quantity) {
-      console.log(`You are in luck, we have the item! You owe: $${results[0].price * quantity} \n `);
+      console.log(`You are in luck, we have your item! You total is: $${results[0].price * quantity} \n `);
+      
       connection.query(
-        
         "UPDATE product SET ? WHERE ?",
         [
           {
@@ -84,6 +84,7 @@ function purchase(product, quantity) {
           }
         ]
       );
+        git 
     } else {
       console.log(`Sorry, we only have ${results[0].stock_quantity} in stock`);
     }
