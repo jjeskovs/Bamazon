@@ -58,7 +58,7 @@ Leave the store:
 * MySQL
 
 ## Future Development
-Manager portal **STILL UNDER DEVELOPMENT**
+Manager portal **UNDER DEVELOPMENT**
 Within the manager portal, the following items will be available:
 
 * View all the inventory in the store 
