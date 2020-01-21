@@ -1,4 +1,5 @@
-require("dotenv").config(); // for the pasword 
+require("dotenv").config(); // for the password 
+
 var mysql = require("mysql");
 var inquirer = require("inquirer");
 var Table = require("cli-table");
