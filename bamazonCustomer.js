@@ -93,15 +93,15 @@ function purchase(product, quantity) {
           type: "list",
           name: "action",
           message: "What would you like to do next\n",
-          choices: [ "Would you like to buy something else?", "Would you like to live our lovely store?" ],
+          choices: [ "Would you like to buy something else?", "Would you like to leave our lovely store?" ],
           filter: function( val ){return val.toLowerCase()}
         }
       ]).then (answers => {
-        if (answers.action === "would you like to buy something else?"){
+        if (answers.action === "Would you like to buy something else?"){
           console.log("Great!!! Make your Choice")
           displayTable();
                   
-        }else if (answers.action === "would you like to live our lovely store?"){
+        }else if (answers.action === "Would you like to leave our lovely store?"){
               console.log("See you later")
               connection.end();
         }
