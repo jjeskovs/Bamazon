@@ -1,6 +1,6 @@
 ![logo](images/bamazon.png)
 
-# Welcome to our Bamazon Storec! 
+# Welcome to our Bamazon Store! 
 
 ## About
 
