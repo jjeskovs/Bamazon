@@ -10,11 +10,11 @@ Once the item and the quantity has been selected, the app will check the quantit
 Transaction complete!
 
 ## Getting Started
-1. Clone the repository 
+1. Clone the repository by running the following command in your CLI:
 <pre>git clone git@github.com:jjeskovs/Bamazon.git</pre>
 
 2. Install Node.js
-3. Install all the dependency by running the 
+3. Install all the dependency by running: 
 <pre>npm install</pre>
 
 4. Seed MySQL database 
@@ -26,6 +26,7 @@ Transaction complete!
 node bamazonCustomer.js 
 </pre>
 
+### Preview of the app: 
 
 **Home Screen with the list of current items on hand.**
 
